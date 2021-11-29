@@ -1,14 +1,6 @@
 {
   "cursos": [
     {
-      "id": 1,
-      "titulo": "Direito Const.",
-      "descricao": "Curso de Direito Const.",
-      "imagem": "http://dummyimage.com/206x100.png/5fa2dd/ffffff",
-      "nome_professor": "Humphrey",
-      "lista_aula": "http://jalbum.net/ac/leo/pellentesque.jsp?eu=rhoncus&magna=aliquet&vulputate=pulvinar&luctus=sed&cum=nisl&sociis=nunc&natoque=rhoncus&penatibus=dui&et=vel&magnis=sem&dis=sed&parturient=sagittis&montes=nam&nascetur=congue&ridiculus=risus&mus=semper&vivamus=porta&vestibulum=volutpat&sagittis=quam&sapien=pede&cum=lobortis&sociis=ligula&natoque=sit&penatibus=amet&et=eleifend&magnis=pede&dis=libero&parturient=quis&montes=orci&nascetur=nullam&ridiculus=molestie&mus=nibh&etiam=in&vel=lectus&augue=pellentesque&vestibulum=at&rutrum=nulla&rutrum=suspendisse&neque=potenti&aenean=cras&auctor=in&gravida=purus&sem=eu&praesent=magna&id=vulputate&massa=luctus&id=cum&nisl=sociis&venenatis=natoque&lacinia=penatibus&aenean=et&sit=magnis&amet=dis&justo=parturient&morbi=montes&ut=nascetur&odio=ridiculus&cras=mus&mi=vivamus&pede=vestibulum&malesuada=sagittis&in=sapien&imperdiet=cum&et=sociis&commodo=natoque&vulputate=penatibus&justo=et&in=magnis"
-    },
-    {
       "id": 2,
       "titulo": "Cheetah Mobile Inc.",
       "descricao": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",

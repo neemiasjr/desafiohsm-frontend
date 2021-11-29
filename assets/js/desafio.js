@@ -93,6 +93,9 @@ $(document).ready(function(){
     $('#acao').val("");
     $('#titulo').val("");
     $('#descricao').val("");
+    $('#imagem').val("");
+    $('#nome_professor').val("");
+    $('#links').val("");
   }
 // GET Request
   function listaCursos()
@@ -139,7 +142,7 @@ $(document).ready(function(){
       data.descricao = $('#descricao').val();
       data.imagem = $('#imagem').val();
       data.nome_professor = $('#nome_professor').val();
-      data.lista_aula = $('#links').val(data.lista_aula);
+      data.lista_aula = $('#links').val();
 
       
       //console.log(data.title,data.author,data.id);
@@ -152,11 +155,13 @@ $(document).ready(function(){
            success:function(data){
               listaCursos();
               console.log("added succesfully");
-              Noty.overrideDefaults({
+              new Noty({
+                    type: 'success',
                     layout   : 'topRight',
-                    theme    : 'mint',
+                    theme: 'relax',
                     text: 'Curso Criado com sucesso!!',
-              });
+              }).show();
+              limparForm();
            },
            error:function(){
               console.log("error");
@@ -174,7 +179,14 @@ function deletarCurso(id){
        url: 'http://localhost:3000/cursos/'+id,
        success:function(data){
         listaCursos();
-         console.log("Deleted succesfully");
+        new Noty({
+          type: 'success',
+          layout   : 'topRight',
+          theme: 'relax',
+          text: 'Curso deletado com sucesso!!',
+        }).show();
+        console.log("Deleted succesfully");
+        limparForm();
        },
        error:function(){
           console.log("error");
@@ -224,7 +236,14 @@ function atualizarCurso(id)
           contentType:'application/json',
           success:function(data){
             listaCursos();
+            new Noty({
+              type: 'success',
+              layout   : 'topRight',
+              theme: 'relax',
+              text: 'Curso atualizado com sucesso!!',
+            }).show();
             console.log("Updated succesfully");
+            limparForm();
           },
           error:function(){
               console.log("error");
