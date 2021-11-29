@@ -94,10 +94,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 #myTable td{
   padding: 5px;
+  overflow-wrap: break-word; 
 }
 
 #myTable tr:nth-child(even) {
   background-color: #f2f2f2;
+  word-wrap: break-word;   
 }
 
 #myTable tr:hover {
@@ -112,3 +114,4 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   background-color: transparent;
   cursor: pointer;
 }
+
